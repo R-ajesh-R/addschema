@@ -1,42 +1,150 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+button{
+  border-radius: 5px;
+}
+
+svg{
+  width: 20px;
+  height: 20px;
+}
+
+.heading{
+  font-size: 16px;
+  height: 80px;
+  background-color: #40acbc;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.heading span{
+  padding: 0px 10px
+}
+
+.wrapper{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.wrapper button{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.modal{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(160,156,156,0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content{
+  width: 500px;
+  background-color: white;
+  overflow-x: scroll;
+}
+
+.modal svg{
+  cursor: pointer;
+}
+
+.segment-section{
+  width: 100%;
+}
+
+.outputtext{
+  font-size: 14px;
+  font-weight: 400;
   text-align: center;
+  padding: 30px 0px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.input-wrapper{
+  text-align: center;
+  padding: 30px 0px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-wrapper input{
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.add-button,.select-wrapper p{
+  display: flex;
+  align-items: center;
+  width: 270px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  margin-bottom: 70px;
 }
 
-.card {
-  padding: 2em;
+.select-wrapper p{
+  margin-left: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.add-button{
+  color: #62dc80;
+}
+
+.add-button span{
+  display: flex;
+}
+
+.select-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-wrapper input{
+  width: 275px;
+  padding: 5px;
+}
+.select-wrapper select{
+  margin: 20px;
+  width: 250px;
+  padding: 5px;
+}
+
+.bottom-section{
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  background-color: #f8f4f4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cancel{
+  color: red;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.create-button{
+  color: white;
+  background-color: #62dc80;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
 }
